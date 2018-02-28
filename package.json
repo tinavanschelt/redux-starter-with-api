@@ -1,0 +1,41 @@
+{
+  "name": "super-simple-react-starter",
+  "version": "1.0.0",
+  "description": "Heroku-ready super simple starter I use for (super tiny) personal projects.",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.config.js",
+    "dev": "webpack-dev-server --hot --inline",
+    "lint": "eslint app/**",
+    "lint:watch": "esw -w app/**",
+    "review": "npm run lint",
+    "start": "npm run build && NODE_ENV=production node server.js"
+  },
+  "author": "@tinavanschelt",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "express": "^4.15.5",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "styled-components": "^3.1.6",
+    "webpack": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.7.2",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-watch": "^3.1.2",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-dev-server": "^2.8.2",
+    "webpack-hot-middleware": "^2.19.1"
+  }
+}
