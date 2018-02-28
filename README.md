@@ -1,6 +1,6 @@
 # Super Simple React Starter
 
-This is a simple React starter built for personal use. I generally use if for quick examples / prototyping.
+A simple React starter built for personal use. I generally use if for quick examples / prototyping.
 
 * a lightweight webpack config
 * styled-components
