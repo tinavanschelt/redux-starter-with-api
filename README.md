@@ -5,7 +5,7 @@ A simple React starter built for personal use. I generally use if for quick exam
 * a lightweight webpack config
 * styled-components
 * eslint & hot reloading
-* Heroku-ready deployment setup
+* Heroku-ready deployment setup (thanks to https://github.com/alanbsmith/react-node-example)
 
 ## Setup
 
