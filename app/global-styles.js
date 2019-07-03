@@ -1,9 +1,10 @@
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 /* eslint no-unused-expressions: 0 */
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   html,
   body {
+    background-color: #FFF;
     height: 100%;
     width: 100%;
   }
@@ -38,3 +39,5 @@ injectGlobal`
     }
   }
 `;
+
+export default GlobalStyle;
