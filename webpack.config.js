@@ -1,36 +1,32 @@
-const webpack = require('webpack');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
-require('babel-polyfill');
+
+const htmlPlugin = new HtmlWebPackPlugin({
+  template: './app/index.html',
+  filename: './index.html'
+});
 
 module.exports = {
-  entry: [
-    './app/index'
-  ],
-  module: {
-    loaders: [
-      { test: /\.js?$/, loader: 'babel-loader', exclude: /node_modules/ },
-    ]
-  },
-  resolve: {
-    modules: [
-      path.resolve('./'),
-      path.resolve('./node_modules'),
-    ],
-    extensions: ['.js','.scss'],
-  },
+  entry: './app/index.js',
   output: {
-    path: path.join(__dirname, '/build'),
-    publicPath: '/',
-    filename: 'bundle.js'
+    path: path.join(__dirname, 'build'),
+    filename: '[name].js'
   },
-  devtool: 'cheap-eval-source-map',
-  devServer: {
-    contentBase: './build',
-    hot: true
-  },
-  plugins: [
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
-  ]
+  plugins: [htmlPlugin],
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        loader: 'file-loader',
+        options: { name: '/static/[name].[ext]' }
+      }
+    ]
+  }
 };
