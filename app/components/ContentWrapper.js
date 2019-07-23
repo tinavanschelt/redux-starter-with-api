@@ -1,7 +1,3 @@
-/**
- * ContentWrapper (styled-component)
- */
-
 import styled from 'styled-components';
 
 const ContentWrapper = styled.div`
@@ -10,4 +6,4 @@ const ContentWrapper = styled.div`
   max-width: 1200px;
 `;
 
-export default ContentWrapper;
+export { ContentWrapper };

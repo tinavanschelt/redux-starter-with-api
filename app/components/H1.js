@@ -1,7 +1,3 @@
-/**
- * H1 (styled-component)
- */
-
 import styled from 'styled-components';
 
 const H1 = styled.h1`
@@ -9,4 +5,4 @@ const H1 = styled.h1`
   font-size: 36px;
 `;
 
-export default H1;
+export { H1 };

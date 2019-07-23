@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import H1 from '../../components/H1';
+import { H1 } from '../components';
 
 function Hello({ name }) {
-  return (
-    <H1>Hello, {name}!</H1>
-  );
-};
+  return <H1>Hello, {name}!</H1>;
+}
 
 Hello.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
 };
 
 export default Hello;

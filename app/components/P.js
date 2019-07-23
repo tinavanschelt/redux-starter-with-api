@@ -1,7 +1,3 @@
-/**
- * Paragraph (styled-component)
- */
-
 import styled from 'styled-components';
 
 const P = styled.p`
@@ -9,4 +5,4 @@ const P = styled.p`
   font-size: 14px;
 `;
 
-export default P;
+export { P };
