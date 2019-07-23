@@ -1,0 +1,59 @@
+{
+  "airports": [
+    {
+      "id": 1,
+      "name": "Shannon Airport",
+      "code": "SNN",
+      "docking_capacity": 5
+    },
+    {
+      "id": 2,
+      "name": "Dublin International Airport",
+      "code": "DUB",
+      "docking_capacity": 15
+    },
+    { "id": 3, "name": "Cork Airport", "code": "ORK", "docking_capacity": 10 }
+  ],
+  "airplanes": [
+    {
+      "id": 1,
+      "flight_nr": "ABC123"
+    },
+    {
+      "id": 2,
+      "flight_nr": "ABC456"
+    },
+    {
+      "id": 3,
+      "flight_nr": "DEF123"
+    },
+    {
+      "id": 4,
+      "flight_nr": "DEF456"
+    },
+    {
+      "id": 5,
+      "flight_nr": "GHI123"
+    },
+    {
+      "id": 6,
+      "flight_nr": "GHI456"
+    },
+    {
+      "id": 7,
+      "flight_nr": "JKL123"
+    },
+    {
+      "id": 8,
+      "flight_nr": "JKL456"
+    },
+    {
+      "id": 9,
+      "flight_nr": "MNO123"
+    },
+    {
+      "id": 10,
+      "flight_nr": "MNO123"
+    }
+  ]
+}

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   render(
     <Fragment>
       <App>
-        <Hello name="Mars" />
+        <Hello name="Yah" />
       </App>
       <GlobalStyle />
     </Fragment>,
