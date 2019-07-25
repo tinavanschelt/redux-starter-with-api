@@ -7,10 +7,6 @@ import { H1 } from '../components'
 import { loadAirports } from '../actions'
 
 class Airports extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   componentDidMount() {
     this.props.dispatch(loadAirports())
   }
