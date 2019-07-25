@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 /* eslint no-unused-expressions: 0 */
 const GlobalStyle = createGlobalStyle`
@@ -38,6 +38,6 @@ const GlobalStyle = createGlobalStyle`
       color: blue;
     }
   }
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle

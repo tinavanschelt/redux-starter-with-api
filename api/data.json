@@ -2,19 +2,24 @@
   "airports": [
     {
       "id": 1,
-      "name": "Shannon Airport",
-      "code": "SNN",
-      "docking_capacity": 5
+      "name": "Dubai International Airport",
+      "code": "DXB",
+      "docking_capacity": 10
     },
     {
       "id": 2,
-      "name": "Dublin International Airport",
-      "code": "DUB",
+      "name": "John F. Kennedy International Airport",
+      "code": "JFK",
       "docking_capacity": 15
     },
-    { "id": 3, "name": "Cork Airport", "code": "ORK", "docking_capacity": 10 }
+    {
+      "id": 3,
+      "name": "Heathrow Airport",
+      "code": "LHR",
+      "docking_capacity": 5
+    }
   ],
-  "airplanes": [
+  "flights": [
     {
       "id": 1,
       "flight_nr": "ABC123"

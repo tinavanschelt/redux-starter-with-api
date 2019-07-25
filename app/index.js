@@ -2,21 +2,36 @@
  * This is the entry file for the application
  */
 
-import React, { Fragment } from 'react';
-import { render } from 'react-dom';
+import 'babel-polyfill'
+import React from 'react'
+import { render } from 'react-dom'
 
-import App from './containers/App';
-import GlobalStyle from './global-styles';
-import Hello from './containers/Hello';
+import { Provider } from 'react-redux'
+import configureStore from './store'
+
+import GlobalStyle from './global-styles'
+
+import App from './containers/App'
+import Airports from './containers/Airports'
+import Flights from './containers/Flights'
+
+import { Section } from './components'
+
+const store = configureStore()
 
 document.addEventListener('DOMContentLoaded', function() {
   render(
-    <Fragment>
+    <Provider store={store}>
       <App>
-        <Hello name="Yoh" />
+        <Section>
+          <Flights />
+        </Section>
+        <Section>
+          <Airports />
+        </Section>
       </App>
       <GlobalStyle />
-    </Fragment>,
+    </Provider>,
     document.getElementById('app')
-  );
-});
+  )
+})
